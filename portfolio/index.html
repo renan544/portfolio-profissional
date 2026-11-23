@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Renan Rodrigues, desenvolvedor Full Stack em formação.">
+
+  <title>Renan Rodrigues | Desenvolvedor Full Stack</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <nav class="navegacao container">
+      <a href="#inicio" class="logo">Renan<span>.dev</span></a>
+
+      <div class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="inicio container" id="inicio">
+
+      <div class="apresentacao">
+        <span class="etiqueta">PORTFÓLIO PROFISSIONAL</span>
+
+        <p class="saudacao">Olá, seja bem-vindo! 👋</p>
+
+        <h1>Eu sou <span>Renan Rodrigues.</span></h1>
+
+        <h2>Desenvolvedor Full Stack em formação</h2>
+
+        <p class="descricao">
+          Sou apaixonado por tecnologia, desenvolvimento web
+          e resolução de problemas. Busco transformar ideias
+          em soluções digitais modernas, funcionais e acessíveis.
+        </p>
+
+        <div class="botoes-sociais">
+          <a href="#contato" class="botao botao-destaque">
+            Enviar mensagem
+          </a>
+        </div>
+      </div>
+
+      <div class="painel-codigo">
+        <div class="painel-topo">
+          <span class="circulo vermelho"></span>
+          <span class="circulo amarelo"></span>
+          <span class="circulo verde"></span>
+          <span class="arquivo">developer.js</span>
+        </div>
+
+        <pre><code><span class="roxo">const</span> developer = {
+  nome: <span class="verde-texto">"Renan Rodrigues"</span>,
+  foco: <span class="verde-texto">"Full Stack"</span>,
+  tecnologias: [
+    <span class="verde-texto">"HTML"</span>,
+    <span class="verde-texto">"CSS"</span>,
+    <span class="verde-texto">"JavaScript"</span>
+  ],
+  objetivo: <span class="verde-texto">"Evoluir sempre"</span>
+};</code></pre>
+      </div>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section class="secao container" id="sobre">
+      <div class="titulo-secao">
+        <span>01 / SOBRE MIM</span>
+        <h2>Meus objetivos profissionais</h2>
+      </div>
+
+      <div class="cartao">
+        <p>
+          Meu objetivo é ingressar na área de tecnologia como
+          <strong>desenvolvedor Full Stack</strong>, contribuindo
+          para a criação de aplicações web eficientes, modernas
+          e intuitivas.
+        </p>
+
+        <p>
+          As tecnologias que mais utilizo atualmente são
+          <strong>HTML, CSS e JavaScript</strong>, com as quais
+          desenvolvo projetos práticos e aprimoro meus
+          conhecimentos em programação.
+        </p>
+
+        <p>
+          Tenho interesse em ampliar minhas habilidades tanto
+          no desenvolvimento Front-end quanto no Back-end,
+          aprofundando meus conhecimentos em lógica de
+          programação, integração de sistemas e boas práticas
+          de desenvolvimento.
+        </p>
+
+        <p>
+          Busco minha primeira oportunidade profissional
+          na área de desenvolvimento, onde possa aplicar
+          meus conhecimentos, aprender com profissionais
+          experientes e contribuir para projetos reais.
+        </p>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="secao container" id="tecnologias">
+      <div class="titulo-secao">
+        <span>02 / HABILIDADES</span>
+        <h2>Minhas tecnologias</h2>
+      </div>
+
+      <div class="grade-tecnologias">
+
+        <article class="cartao tecnologia">
+          <div class="simbolo html">HTML</div>
+          <h3>HTML5</h3>
+          <p>Estruturação semântica de páginas web.</p>
+        </article>
+
+        <article class="cartao tecnologia">
+          <div class="simbolo css">CSS</div>
+          <h3>CSS3</h3>
+          <p>Estilização, layouts e responsividade.</p>
+        </article>
+
+        <article class="cartao tecnologia">
+          <div class="simbolo js">JS</div>
+          <h3>JavaScript</h3>
+          <p>Interatividade e funcionalidades dinâmicas.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao container" id="contato">
+      <div class="titulo-secao">
+        <span>03 / CONTATO</span>
+        <h2>Vamos conversar?</h2>
+        <p>
+          Tem uma oportunidade profissional ou gostaria de
+          entrar em contato? Envie sua mensagem.
+        </p>
+      </div>
+
+      <form id="formulario-contato" class="cartao formulario">
+
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome"
+               placeholder="Digite seu nome" required>
+
+        <label for="email">Seu e-mail</label>
+        <input type="email" id="email" name="email"
+               placeholder="exemplo@email.com" required>
+
+        <label for="mensagem">Sua mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6"
+                  placeholder="Escreva sua mensagem..."
+                  required></textarea>
+
+        <button type="submit" class="botao botao-destaque">
+          Enviar mensagem
+        </button>
+
+        <p id="status-formulario" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ E REDES SOCIAIS -->
+  <footer class="rodape">
+
+    <div class="container">
+
+      <h3>Minhas redes sociais</h3>
+
+      <div class="redes-rodape">
+
+        <a href="https://www.instagram.com/renan_renkrenk/"
+           target="_blank" rel="noopener noreferrer">
+          Instagram: @renan_renkrenk
+        </a>
+
+        <span>LinkedIn: Renan Santos</span>
+
+        <a href="https://github.com/renan544"
+           target="_blank" rel="noopener noreferrer">
+          GitHub: renan544
+        </a>
+
+      </div>
+
+      <p class="copyright">
+        © <span id="ano"></span> Renan Rodrigues.
+        Desenvolvido com HTML, CSS e JavaScript.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
